@@ -1,0 +1,34 @@
+body {
+    background-color: lightblue;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.my-form form input {
+    width: 20vw;
+    padding: 5px;
+}
+
+.my-form form textarea {
+    resize: none;
+    height: 100px;
+    width: 20vw;
+    padding: 5px;
+}
+
+.my-form form button {
+    background-color: blue;
+    color: white;
+    padding: 5px 20px;
+}

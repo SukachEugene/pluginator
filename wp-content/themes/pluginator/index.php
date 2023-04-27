@@ -1,6 +1,11 @@
 <?php
+
+wp_head();
+
+// echo '<link rel="stylesheet" href="http://plaginator.local/wp-content/plugins/my-form/css/my-form.css"></link>';
+
 $args = array(
-    'post_type' => 'post',
+    'post_type' => 'my_form',
     'post_status' => 'publish',
     'posts_per_page' => -1,
 );
@@ -20,4 +25,8 @@ if ($posts->have_posts()) {
     }
 }
 wp_reset_postdata();
+
+
+wp_footer();
+
 ?>

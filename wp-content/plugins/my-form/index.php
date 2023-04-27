@@ -1,2 +1,2 @@
 <?php
-// Nothing to see here
+die('You cannot be here');
