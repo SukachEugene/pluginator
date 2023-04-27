@@ -22,6 +22,8 @@ if (!class_exists('myForm')) {
 
         public function __construct()
         {
+
+            
             // Create custom post type
             add_action('init', array($this, 'create_custom_post_type'));
 
