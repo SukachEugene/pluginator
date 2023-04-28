@@ -46,7 +46,7 @@ if (!class_exists('myForm')) {
             $args = array(
                 'public' => true,
                 'has_archive' => true,
-                'supports' => array('title'),
+                'supports' => array('title', 'test'),
                 'exclude_from_search' => true,
                 'public_queryable' => false,
                 'capability' => 'manage_options',
@@ -55,10 +55,52 @@ if (!class_exists('myForm')) {
                     'singular_name' => 'My Form Entry'
                 ),
                 'menu_icon' => 'dashicons-media-text',
+
+
+
+                'register_meta_box_cb' => array($this, 'add_custom_meta_box')
+
+
+
             );
 
             register_post_type('my_form', $args);
         }
+
+
+        
+
+        public function add_custom_meta_box($post)
+        {
+            add_meta_box(
+                'custom_meta_box',
+                'Custom Field',
+                array($this, 'render_custom_meta_box'),
+                'my_form',
+                'normal',
+                'high',
+                array(
+                    'collapse' => false,
+                )
+            );
+        }
+
+        public function render_custom_meta_box($post)
+        {
+            $field_value = get_post_meta($post->ID, 'my_custom_field', true);
+    
+            echo '<label for="my_custom_field">My Custom Field:</label>';
+            echo '<input type="text" id="my_custom_field" name="my_custom_field" value="' . esc_attr($field_value) . '" />';
+        }
+
+
+
+
+
+
+
+
+
 
 
         public function load_assets()
@@ -102,7 +144,6 @@ if (!class_exists('myForm')) {
             </div>
 
         <?php
-            echo get_rest_url(null, 'my-form/v1/send-email');
         }
 
 
@@ -157,6 +198,9 @@ if (!class_exists('myForm')) {
             $params = $data->get_params();
             $nonce = $headers['x_wp_nonce'][0];
 
+            // echo json_encode($headers);
+
+            echo json_encode($params);
 
             if (!wp_verify_nonce($nonce, 'wp_rest')) {
 
@@ -166,10 +210,11 @@ if (!class_exists('myForm')) {
             $post_id = wp_insert_post([
                 'post_type' => 'my_form',
                 'post_title' => 'Contact enquiry',
-                'post_status' => 'publish'
+                'post_status' => 'publish',
             ]);
 
             if ($post_id) {
+                
                 return new WP_REST_Response('Thank you for your email', 200);
             }
         }
