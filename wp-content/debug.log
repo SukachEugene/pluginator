@@ -1121,3 +1121,237 @@ Stack trace:
 #5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
 #6 {main}
   thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Base\SettingsLinks.php on line 13
+[02-May-2023 14:33:51 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, cannot access protected method Inc\Api\SettingsApi::addAdminMenu() in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php:308
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\includes\menu.php(155): do_action('admin_menu', '')
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\menu.php(420): require_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin.php(158): require('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\plugins.php(10): require_once('C:\\Users\\sukach...')
+#6 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php on line 308
+[02-May-2023 14:49:39 UTC] PHP Parse error:  syntax error, unexpected single-quoted string "page_title", expecting ")" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 30
+[02-May-2023 14:50:02 UTC] PHP Warning:  Undefined variable $pages in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 43
+[02-May-2023 14:50:02 UTC] PHP Fatal error:  Uncaught TypeError: Inc\Api\SettingsApi::addPages(): Argument #1 ($pages) must be of type array, null given, called in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 43 and defined in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php:21
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php(43): Inc\Api\SettingsApi->addPages(NULL)
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#6 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\sukach...')
+#7 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 21
+[02-May-2023 14:50:02 UTC] PHP Notice:  Function is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/documentation/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 5865
+[02-May-2023 14:50:02 UTC] PHP Notice:  Function is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/documentation/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 5865
+[02-May-2023 14:50:02 UTC] PHP Warning:  Undefined variable $pages in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 43
+[02-May-2023 14:50:02 UTC] PHP Fatal error:  Uncaught TypeError: Inc\Api\SettingsApi::addPages(): Argument #1 ($pages) must be of type array, null given, called in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 43 and defined in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php:21
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php(43): Inc\Api\SettingsApi->addPages(NULL)
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#6 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-blog-header.php(13): require_once('C:\\Users\\sukach...')
+#7 C:\Users\sukachy\Local Sites\plaginator\app\public\index.php(17): require('C:\\Users\\sukach...')
+#8 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 21
+[02-May-2023 14:50:02 UTC] PHP Notice:  Function is_embed was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/documentation/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 5865
+[02-May-2023 14:50:02 UTC] PHP Notice:  Function is_search was called <strong>incorrectly</strong>. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a href="https://wordpress.org/documentation/article/debugging-in-wordpress/">Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 5865
+[02-May-2023 14:55:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Inc\Api\SettingsApi::Wregister() in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:42
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
+#6 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 42
+[02-May-2023 14:56:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function register() on null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:42
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
+#6 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 42
+[02-May-2023 14:57:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function register() on null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:42
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
+#6 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 42
+[02-May-2023 14:59:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function register() on null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:42
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
+#6 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 42
+[02-May-2023 15:02:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function register() on null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:42
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
+#6 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 42
+[02-May-2023 15:04:01 UTC] PHP Fatal error:  Uncaught Error: Call to a member function register() on null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:42
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
+#6 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 42
+[02-May-2023 15:06:02 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 50
+[02-May-2023 15:10:17 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:17 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:17 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:19 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:19 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:19 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:19 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:10:19 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:10:21 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:21 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:21 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:21 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:10:21 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:10:22 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:22 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:22 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:22 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:10:22 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:10:23 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:23 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:23 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:23 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:10:23 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:10:25 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:25 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:25 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:25 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:10:25 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:10:27 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:27 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:27 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:27 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:27 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:27 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:27 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:10:27 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:10:30 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:10:30 UTC] PHP Warning:  Undefined array key "mpage_title" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 39
+[02-May-2023 15:10:30 UTC] PHP Warning:  Undefined array key "mcapability" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[02-May-2023 15:10:30 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:10:30 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:11:24 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:11:24 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:11:24 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:11:26 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:11:26 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:11:26 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:11:27 UTC] PHP Warning:  Undefined array key "parent_slug" in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 38
+[02-May-2023 15:11:27 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 7053
+[02-May-2023 15:11:27 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\functions.php on line 2165
+[02-May-2023 15:23:08 UTC] PHP Warning:  Undefined property: Inc\Pages\Admin::$subpages in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 42
+[02-May-2023 15:23:08 UTC] PHP Fatal error:  Uncaught TypeError: Inc\Api\SettingsApi::addSubPages(): Argument #1 ($pages) must be of type array, null given, called in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 42 and defined in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php:54
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php(42): Inc\Api\SettingsApi->addSubPages(NULL)
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\init.php(35): Inc\Pages\Admin->register()
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\eugene-plugin.php(68): Inc\Init::register_services()
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(453): include_once('C:\\Users\\sukach...')
+#4 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#5 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#6 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
+#7 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 54
+[02-May-2023 15:25:08 UTC] PHP Warning:  Undefined variable $admin_page in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 45
+[02-May-2023 15:25:08 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 45
+[02-May-2023 15:25:08 UTC] PHP Warning:  Undefined variable $admin_page in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 46
+[02-May-2023 15:25:08 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 46
+[02-May-2023 15:25:08 UTC] PHP Warning:  Undefined variable $admin_page in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 47
+[02-May-2023 15:25:08 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 47
+[02-May-2023 15:25:08 UTC] PHP Warning:  Undefined variable $admin_page in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 48
+[02-May-2023 15:25:08 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 48
+[02-May-2023 15:25:08 UTC] PHP Warning:  Undefined variable $admin_page in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 49
+[02-May-2023 15:25:08 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 49
+[02-May-2023 15:25:08 UTC] PHP Warning:  Undefined variable $admin_page in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 50
+[02-May-2023 15:25:08 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 50
+[02-May-2023 15:26:48 UTC] PHP Warning:  Undefined variable $admin_page in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 49
+[02-May-2023 15:26:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 49
+[02-May-2023 15:26:48 UTC] PHP Warning:  Undefined variable $admin_page in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 50
+[02-May-2023 15:26:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 50
+[02-May-2023 15:33:52 UTC] PHP Parse error:  syntax error, unexpected token "," in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Api\SettingsApi.php on line 41
+[03-May-2023 06:22:53 UTC] PHP Warning:  require_once(/templates/admin.php): Failed to open stream: No such file or directory in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 34
+[03-May-2023 06:22:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/templates/admin.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:34
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(308): Inc\Pages\Admin->Inc\Pages\{closure}('')
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin.php(259): do_action('toplevel_page_e...')
+#4 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 34
+[03-May-2023 06:23:17 UTC] PHP Warning:  require_once(/templates/admin.php): Failed to open stream: No such file or directory in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 34
+[03-May-2023 06:23:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/templates/admin.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:34
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(308): Inc\Pages\Admin->Inc\Pages\{closure}('')
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin.php(259): do_action('toplevel_page_e...')
+#4 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 34
+[03-May-2023 06:23:18 UTC] PHP Warning:  require_once(/templates/admin.php): Failed to open stream: No such file or directory in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 34
+[03-May-2023 06:23:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/templates/admin.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:34
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(308): Inc\Pages\Admin->Inc\Pages\{closure}('')
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin.php(259): do_action('toplevel_page_e...')
+#4 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 34
+[03-May-2023 06:27:02 UTC] PHP Warning:  require_once(/templates/admin.php): Failed to open stream: No such file or directory in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 34
+[03-May-2023 06:27:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/templates/admin.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:34
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(308): Inc\Pages\Admin->Inc\Pages\{closure}('')
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin.php(259): do_action('toplevel_page_e...')
+#4 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 34
+[03-May-2023 06:30:21 UTC] PHP Warning:  require_once(/templates/admin.php): Failed to open stream: No such file or directory in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 45
+[03-May-2023 06:30:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/templates/admin.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:45
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(308): Inc\Pages\Admin->Inc\Pages\{closure}('')
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin.php(259): do_action('toplevel_page_e...')
+#4 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 45
+[03-May-2023 06:30:25 UTC] PHP Warning:  require_once(/templates/admin.php): Failed to open stream: No such file or directory in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 45
+[03-May-2023 06:30:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/templates/admin.php' (include_path='.:/usr/share/php:/www/wp-content/pear') in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php:45
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(308): Inc\Pages\Admin->Inc\Pages\{closure}('')
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin.php(259): do_action('toplevel_page_e...')
+#4 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\plugins\eugene-plugin\inc\Pages\Admin.php on line 45
