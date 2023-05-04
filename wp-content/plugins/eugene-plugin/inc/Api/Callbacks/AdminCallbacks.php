@@ -30,17 +30,17 @@ class AdminCallbacks extends BaseController
         return require_once("$this->plugin_path/templates/widget.php");
     }
 
-    public function eugeneOptionsGroup($input)
-    {
+    // public function eugeneOptionsGroup($input)
+    // {
 
-        return $input;
-    }
+    //     return $input;
+    // }
 
-    public function eugeneAdminSection()
-    {
+    // public function eugeneAdminSection()
+    // {
 
-        echo 'check this beautiful section';
-    }
+    //     echo 'check this beautiful section';
+    // }
 
     public function eugeneTextExample()
     {

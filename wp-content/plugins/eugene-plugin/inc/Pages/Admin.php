@@ -9,12 +9,16 @@ namespace Inc\Pages;
 use \Inc\Api\SettingsApi;
 use \Inc\Base\BaseController;
 use \Inc\Api\Callbacks\AdminCallbacks;
+use Inc\Api\Callbacks\ManagerCallbacks;
 
 class Admin extends BaseController
 {
 
    public $settings;
+
    public $callbacks;
+   public $callbacks_mngr;
+
    public $pages = array();
    public $subpages = array();
 
@@ -25,6 +29,7 @@ class Admin extends BaseController
       $this->settings = new SettingsApi;
 
       $this->callbacks = new AdminCallbacks;
+      $this->callbacks_mngr = new ManagerCallbacks;
 
       $this->setPages();
 
@@ -92,14 +97,46 @@ class Admin extends BaseController
 
       $args = array(
          array(
-            'option_group' => 'eugene_options_group',
-            'option_name'  => 'text_example',
-            'callback'     => array($this->callbacks, 'eugeneOptionsGroup')
+            'option_group' => 'eugene_plugin_settings',
+            'option_name'  => 'cpt_manager',
+            'callback'     => array($this->callbacks_mngr, 'checkboxSanitize')
          ),
          array(
-            'option_group' => 'eugene_options_group',
-            'option_name'  => 'first_name',
+            'option_group' => 'eugene_plugin_settings',
+            'option_name'  => 'taxonomy_manager',
+            'callback'     => array($this->callbacks_mngr, 'checkboxSanitize')
+         ),
+         array(
+            'option_group' => 'eugene_plugin_settings',
+            'option_name'  => 'tmedia_widget',
+            'callback'     => array($this->callbacks_mngr, 'checkboxSanitize')
+         ),
+         array(
+            'option_group' => 'eugene_plugin_settings',
+            'option_name'  => 'gallery_manager',
+            'callback'     => array($this->callbacks_mngr, 'checkboxSanitize')
+         ),
+         array(
+            'option_group' => 'eugene_plugin_settings',
+            'option_name'  => 'templates_manager',
+            'callback'     => array($this->callbacks_mngr, 'checkboxSanitize')
+         ),
+         array(
+            'option_group' => 'eugene_plugin_settings',
+            'option_name'  => 'login_manager',
+            'callback'     => array($this->callbacks_mngr, 'checkboxSanitize')
+         ),
+         array(
+            'option_group' => 'eugene_plugin_settings',
+            'option_name'  => 'membership_manager',
+            'callback'     => array($this->callbacks_mngr, 'checkboxSanitize')
+         ),
+         array(
+            'option_group' => 'eugene_plugin_settings',
+            'option_name'  => 'chat_manager',
+            'callback'     => array($this->callbacks_mngr, 'checkboxSanitize')
          )
+
       );
 
       $this->settings->setSettings($args);
@@ -111,8 +148,8 @@ class Admin extends BaseController
       $args = array(
          array(
             'id'        => 'eugene_admin_index',
-            'title'     => 'Settings',
-            'callback'  => array($this->callbacks, 'eugeneAdminSection'),
+            'title'     => 'Settings Manager',
+            'callback'  => array($this->callbacks_mngr, 'adminSectionManager'),
             'page'      => 'eugene_plugin'
          ),
       );
@@ -125,27 +162,105 @@ class Admin extends BaseController
 
       $args = array(
          array(
-            'id'        => 'text_example',
-            'title'     => 'Text Example',
-            'callback'  => array($this->callbacks, 'eugeneTextExample'),
+            'id'        => 'cpt_manager',
+            'title'     => 'Activate CPT Manager',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
             'page'      => 'eugene_plugin',
             'section'   => 'eugene_admin_index',
             'args'      => array(
-               'label_for'  => 'text_example',
-               'class'      => 'example-class'
+               'label_for'  => 'cpt_manager',
+               'class'      => 'ui-toggle'
             )
          ),
          array(
-            'id'        => 'first_name',
-            'title'     => 'First Name',
-            'callback'  => array ($this->callbacks, 'eugeneFirstName'),
+            'id'        => 'taxonomy_manager',
+            'title'     => 'Activate Taxonomy Manager',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
             'page'      => 'eugene_plugin',
             'section'   => 'eugene_admin_index',
             'args'      => array(
-               'label_for'  => 'first_name',
-               'class'      => 'example-class'
+               'label_for'  => 'taxonomy_manager',
+               'class'      => 'ui-toggle'
             )
-         )
+         ),
+         array(
+            'id'        => 'media_widget',
+            'title'     => 'Activate Media Widget',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
+            'page'      => 'eugene_plugin',
+            'section'   => 'eugene_admin_index',
+            'args'      => array(
+               'label_for'  => 'media_widget',
+               'class'      => 'ui-toggle'
+            )
+         ),
+         array(
+            'id'        => 'gallery_manager',
+            'title'     => 'Activate Gallery Manager',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
+            'page'      => 'eugene_plugin',
+            'section'   => 'eugene_admin_index',
+            'args'      => array(
+               'label_for'  => 'gallery_manager',
+               'class'      => 'ui-toggle'
+            )
+         ),
+         array(
+            'id'        => 'testimonial_manager',
+            'title'     => 'Activate Testimonial Manager',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
+            'page'      => 'eugene_plugin',
+            'section'   => 'eugene_admin_index',
+            'args'      => array(
+               'label_for'  => 'testimonial_manager',
+               'class'      => 'ui-toggle'
+            )
+         ),
+         array(
+            'id'        => 'templates_manager',
+            'title'     => 'Activate Templates Manager',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
+            'page'      => 'eugene_plugin',
+            'section'   => 'eugene_admin_index',
+            'args'      => array(
+               'label_for'  => 'templates_manager',
+               'class'      => 'ui-toggle'
+            )
+         ),
+         array(
+            'id'        => 'login_manager',
+            'title'     => 'Activate Ajax Login/Signup',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
+            'page'      => 'eugene_plugin',
+            'section'   => 'eugene_admin_index',
+            'args'      => array(
+               'label_for'  => 'login_manager',
+               'class'      => 'ui-toggle'
+            )
+         ),
+         array(
+            'id'        => 'membership_manager',
+            'title'     => 'Activate Membership Manager',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
+            'page'      => 'eugene_plugin',
+            'section'   => 'eugene_admin_index',
+            'args'      => array(
+               'label_for'  => 'membership_manager',
+               'class'      => 'ui-toggle'
+            )
+         ),
+         array(
+            'id'        => 'chat_manager',
+            'title'     => 'Activate Chat Manager',
+            'callback'  => array($this->callbacks_mngr, 'checkboxField'),
+            'page'      => 'eugene_plugin',
+            'section'   => 'eugene_admin_index',
+            'args'      => array(
+               'label_for'  => 'chat_manager',
+               'class'      => 'ui-toggle'
+            )
+         ),
+
       );
 
       $this->settings->setFields($args);
