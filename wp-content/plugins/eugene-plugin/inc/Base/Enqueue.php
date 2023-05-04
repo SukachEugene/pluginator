@@ -22,6 +22,7 @@ class Enqueue extends BaseController
     {
         // enqueue all our scripts
         wp_enqueue_style('mystyle', $this->plugin_url . 'assets/mystyle.css');
+        wp_enqueue_style('checkbox', $this->plugin_url . 'assets/scss/checkbox.css');
         wp_enqueue_script('myscript', $this->plugin_url . 'assets/myscript.js');
     }
 }
