@@ -9,12 +9,19 @@ namespace Inc\Base;
     public static function activate() {
         flush_rewrite_rules();
 
-        if (get_option('eugene_plugin')) {
-            return;
-        }
-
         $default = array();
 
-        update_option('eugene_plugin', $default);
+        if ( ! get_option('eugene_plugin')) {
+            update_option('eugene_plugin', $default);
+        }
+
+        // $default = array(
+        //     array()
+        // );
+
+        if ( ! get_option('eugene_plugin_cpt')) {
+            update_option('eugene_plugin_cpt', $default);
+        }
+
     }
  }
