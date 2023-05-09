@@ -15,12 +15,12 @@ namespace Inc\Base;
             update_option('eugene_plugin', $default);
         }
 
-        // $default = array(
-        //     array()
-        // );
-
         if ( ! get_option('eugene_plugin_cpt')) {
             update_option('eugene_plugin_cpt', $default);
+        }
+
+        if ( ! get_option('eugene_plugin_tax')) {
+            update_option('eugene_plugin_tax', $default);
         }
 
     }

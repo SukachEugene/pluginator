@@ -34,5 +34,7 @@ div.ui-toggle {
       border-radius: 9px; }
     div.ui-toggle label:hover, div.ui-toggle label > div:hover {
       cursor: pointer; }
+  div.ui-toggle.mb-10 {
+    margin-bottom: 10px; }
 
 /*# sourceMappingURL=checkbox.css.map */

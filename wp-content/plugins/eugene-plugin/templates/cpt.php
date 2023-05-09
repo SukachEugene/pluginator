@@ -22,7 +22,7 @@
             $options = get_option('eugene_plugin_cpt') ?: array();
 
             echo "<table class='cpt-table'><tr><th>ID</th><th>Singular Name</th><th>Plural Name</th>
-            <th class='text-center'>Public</th><th class='text-center'>Archive</th><th class='text-center'>Archive</th></tr>";
+            <th class='text-center'>Public</th><th class='text-center'>Archive</th><th class='text-center'>Actions</th></tr>";
 
             foreach ($options as $option) {
 
