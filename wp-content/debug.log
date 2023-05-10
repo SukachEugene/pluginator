@@ -1,0 +1,8 @@
+[10-May-2023 12:21:16 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\themes\pluginator\functions.php:37
+Stack trace:
+#0 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-settings.php(591): include()
+#1 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-config.php(97): require_once('C:\\Users\\sukach...')
+#2 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-load.php(50): require_once('C:\\Users\\sukach...')
+#3 C:\Users\sukachy\Local Sites\plaginator\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\sukach...')
+#4 {main}
+  thrown in C:\Users\sukachy\Local Sites\plaginator\app\public\wp-content\themes\pluginator\functions.php on line 37
