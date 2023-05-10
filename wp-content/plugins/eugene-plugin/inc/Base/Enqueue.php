@@ -31,6 +31,9 @@ class Enqueue extends BaseController
         wp_enqueue_style('mystyle', $this->plugin_url . 'assets/mystyle.css');
 
         // enqueue all our scripts
+        wp_enqueue_script('media-upload');
+        wp_enqueue_media();
+        
         wp_enqueue_script('prettify_scripts', $this->plugin_url . 'assets/prettify-small/google-code-prettify/prettify.js');
 
         wp_enqueue_script('myscript', $this->plugin_url . 'assets/myscript.js');
